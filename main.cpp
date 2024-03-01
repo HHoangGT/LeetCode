@@ -1,11 +1,11 @@
 #include "libs/template.h"
-#include "LeetCode/FirstPalindromicString2108.h"
+#include "LeetCode/MaximumOddBinaryNumber2864.h"
 
 using namespace std;
 
 int main() {
-    vector<string> inp = {"abc", "car", "ada", "racecar", "cool"};
+    string inp = "010";
     auto *obj = new Solution();
-    cout << obj->firstPalindrome(inp) << '\n';
+    cout << obj->maximumOddBinaryNumber(inp) << '\n';
     return 0;
 }

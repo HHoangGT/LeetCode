@@ -19,4 +19,5 @@ add_executable(LeetCode
         LeetCode/SortCharsByFrequency451.h
         libs/myLib.h
         libs/template.h
-        main.cpp)
+        main.cpp
+        LeetCode/MaximumOddBinaryNumber2864.h)
