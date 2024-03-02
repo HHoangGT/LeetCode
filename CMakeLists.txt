@@ -20,4 +20,5 @@ add_executable(LeetCode
         libs/myLib.h
         libs/template.h
         main.cpp
-        LeetCode/MaximumOddBinaryNumber2864.h)
+        LeetCode/MaximumOddBinaryNumber2864.h
+        LeetCode/SquareOfSortedArray977.h)

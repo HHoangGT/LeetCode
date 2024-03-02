@@ -6,6 +6,7 @@
 #define LEETCODE_MAXIMUMODDBINARYNUMBER2864_H
 
 #include "../libs/template.h"
+#include <algorithm>
 
 class Solution {
 public:
