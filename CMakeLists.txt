@@ -23,4 +23,5 @@ add_executable(LeetCode
         LeetCode/MaximumOddBinaryNumber2864.h
         LeetCode/SquareOfSortedArray977.h
         LeetCode/RemoveNthNodeFromEndOfList19.h
-        LeetCode/MinimunLengthOfString1750.h)
+        LeetCode/MinimunLengthOfString1750.h
+        LeetCode/LinkedListCycle141.h)
