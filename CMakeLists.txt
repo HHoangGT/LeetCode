@@ -24,4 +24,5 @@ add_executable(LeetCode
         LeetCode/SquareOfSortedArray977.h
         LeetCode/RemoveNthNodeFromEndOfList19.h
         LeetCode/MinimunLengthOfString1750.h
-        LeetCode/LinkedListCycle141.h)
+        LeetCode/LinkedListCycle141.h
+        LeetCode/IntersectionOfTwoArrays349.h)
