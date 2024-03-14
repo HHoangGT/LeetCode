@@ -26,4 +26,5 @@ add_executable(LeetCode
         LeetCode/MinimunLengthOfString1750.h
         LeetCode/LinkedListCycle141.h
         LeetCode/IntersectionOfTwoArrays349.h
-        LeetCode/CustomSortString791.h)
+        LeetCode/CustomSortString791.h
+        LeetCode/BinarySuabarrayWithSum930.h)
