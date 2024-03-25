@@ -1,12 +1,13 @@
 #include "libs/template.h"
-#include "LeetCode/BinarySuabarrayWithSum930.h"
+#include "NAB/ReturnSmallestPositiveIntegerNotInArray.h"
 
 using namespace std;
 
 int main() {
-    Solution s;
-    vector<int> nums = {1, 0, 1, 0, 1};
-    int goal = 2;
-    cout << s.numSubarraysWithSum(nums, goal) << endl;
+    // write the code to compare the running time of two solutions function
+    // solution and solution2
+    vector<int> A = {1, 3, 6, 4, 1, 2};
+    cout << solution(A) << endl;
+    cout << solution2(A) << endl;
     return 0;
 }
