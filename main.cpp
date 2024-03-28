@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
-    cout << solution(1, 8) << endl;
+int main()
+{
+    cout << solution(1, 12) << endl;
     return 0;
 }
