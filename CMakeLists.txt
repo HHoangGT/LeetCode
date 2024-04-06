@@ -31,4 +31,10 @@ add_executable(LeetCode
         NAB/ReturnSmallestPositiveIntegerNotInArray.h
         NAB/Task1.h
         NAB/Task2.h
-        NAB/Task3.h)
+        NAB/Task3.h
+        "LabExercises/Lab1/PreLab/Multi-dimensional Array_Prelab.h"
+        LabExercises/Lab1/PreLab/ClassString_Prelab.h
+        LabExercises/Lab1/PreLab/C-String_Prelab.h
+        LabExercises/Lab1/PreLab/File_IO_Prelab.h
+        LabExercises/Lab1/PreLab/Function_PreLab.h
+)

@@ -1,10 +1,10 @@
 #include "libs/template.h"
-#include "NAB/Task3.h"
+#include "LabExercises/Lab1/PreLab/Function_PreLab.h"
 
 using namespace std;
 
-int main()
-{
-    cout << solution(1, 12) << endl;
+int main() {
+    int num = 6;
+    cout << completeNum(num) << endl;
     return 0;
 }

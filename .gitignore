@@ -4,3 +4,8 @@ cmake-build-*
 .vscode
 main
 main.dSYM/
+
+.DS_Store
+LabExercises/.DS_Store
+LabExercises/Lab1/.DS_Store
+LabExercises/Lab1/PreLab/.DS_Store
