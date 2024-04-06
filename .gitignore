@@ -2,7 +2,9 @@
 .idea
 cmake-build-*
 .vscode
+
 main
+main.exe
 main.dSYM/
 
 .DS_Store
