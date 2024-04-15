@@ -37,4 +37,9 @@ add_executable(LeetCode
         LabExercises/Lab1/PreLab/C-String_Prelab.h
         LabExercises/Lab1/PreLab/File_IO_Prelab.h
         LabExercises/Lab1/PreLab/Function_PreLab.h
+        LabExercises/Lab1/InLab/C-String_Inlab.h
+        LabExercises/Lab1/InLab/ClassString_Inlab.h
+        "LabExercises/Lab1/InLab/Multi-dimensional Array_Inlab.h"
+        "LabExercises/Lab1/InLab/File IO_Inlab.h"
+        LabExercises/Lab1/InLab/Function_InLab.h
 )

@@ -1,11 +1,20 @@
 #include "libs/template.h"
-#include "LeetCode/TrappingRainWater42.h"
+#include "LabExercises/Lab1/InLab/Function_InLab.h"
 
 using namespace std;
 
 int main() {
-    Solution s;
-    vector<int> heights = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    cout << s.trap(heights) << endl;
+    int n, shift;
+    cin >> n >> shift;
+    char *text = new char[n + 1];
+    for (int i = 0; i < n; i++) cin >> text[i];
+    text[n] = 0;
+
+    encrypt(text, shift);
+    cout << "Encrypted text: " << text << '\n';
+    decrypt(text, shift);
+    cout << "Decrypted text: " << text;
+
+    delete[] text;
     return 0;
 }
