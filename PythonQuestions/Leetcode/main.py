@@ -1,7 +1,9 @@
 import numpy as np
-
+import sys
 
 # Problem 650 LeetCode
+
+
 def can_place_flowers(flowerbed: list[int], n: int) -> bool:
     if n == 0:
         return True
@@ -81,6 +83,24 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         return [0 for num in nums]
 
 
+# Problem 334 LeetCode
+def increasingTriplet(nums: list[int]) -> bool:
+    n = len(nums)
+    if n < 3:
+        return False
+    else:
+        left = sys.maxsize
+        mid = sys.maxsize
+        for num in nums:
+            if num > mid:
+                return True
+            elif num > left and num < mid:
+                mid = num
+            elif num < left:
+                left = num
+    return False
+
+
 if __name__ == '__main__':
-    nums = [-1, 1, 0, -3, 3]
-    print(productExceptSelf(nums=nums))
+    nums = [2, 1, 5, 0, 4, 6]
+    print(increasingTriplet(nums=nums))
