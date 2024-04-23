@@ -1,3 +1,6 @@
+import numpy as np
+
+
 # Problem 650 LeetCode
 def can_place_flowers(flowerbed: list[int], n: int) -> bool:
     if n == 0:
@@ -47,6 +50,37 @@ def reverseWords(s: str) -> str:
     return " ".join(map(str, words))
 
 
+# Problem 238 LeetCode
+def product_with_reduce(lst: list[int]) -> int:
+    return np.prod(lst)
+
+
+def remove_list_element(lst: list[int], index: int) -> list[int]:
+    return lst[:index] + lst[index+1:]
+
+
+def productExceptSelf(nums: list[int]) -> list[int]:
+    # first method
+    # return [product_with_reduce(remove_list_element(nums, index=i)) for i in range(len(nums))]
+
+    # second method
+    prod = 1
+    zero_count = 0
+
+    for num in nums:
+        if num == 0:
+            zero_count += 1
+        else:
+            prod *= num
+
+    if zero_count == 0:
+        return [int(prod/num) for num in nums]
+    elif zero_count == 1:
+        return [0 if num != 0 else prod for num in nums]
+    else:
+        return [0 for num in nums]
+
+
 if __name__ == '__main__':
-    s = "  hello world  "
-    print(reverseWords(s))
+    nums = [-1, 1, 0, -3, 3]
+    print(productExceptSelf(nums=nums))
