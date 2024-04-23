@@ -23,6 +23,7 @@ def can_place_flowers(flowerbed: list[int], n: int) -> bool:
     return False
 
 
+# Problem 345 LeetCode
 def reverseVowels(s: str) -> str:
     word = list(s)
     vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
@@ -39,6 +40,13 @@ def reverseVowels(s: str) -> str:
     return ''.join(word)
 
 
+# Problem 151 LeetCode
+def reverseWords(s: str) -> str:
+    words = s.split()
+    words.reverse()
+    return " ".join(map(str, words))
+
+
 if __name__ == '__main__':
-    s = "hello"
-    print(reverseVowels(s))
+    s = "  hello world  "
+    print(reverseWords(s))
