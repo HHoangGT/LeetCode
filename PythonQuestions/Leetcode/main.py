@@ -23,6 +23,22 @@ def can_place_flowers(flowerbed: list[int], n: int) -> bool:
     return False
 
 
+def reverseVowels(s: str) -> str:
+    word = list(s)
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    start_ptr = 0
+    end_ptr = len(s) - 1
+    while start_ptr < end_ptr:
+        while start_ptr < end_ptr and word[start_ptr] not in vowels:
+            start_ptr += 1
+        while start_ptr < end_ptr and word[end_ptr] not in vowels:
+            end_ptr -= 1
+        word[start_ptr], word[end_ptr] = word[end_ptr], word[start_ptr]
+        start_ptr += 1
+        end_ptr -= 1
+    return ''.join(word)
+
+
 if __name__ == '__main__':
-    n = [1, 0, 0, 0, 0, 1]
-    print(can_place_flowers(flowerbed=n, n=2))
+    s = "hello"
+    print(reverseVowels(s))
