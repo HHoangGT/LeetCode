@@ -84,7 +84,7 @@ def productExceptSelf(nums: list[int]) -> list[int]:
 
 
 # Problem 334 LeetCode
-def increasingTriplet(nums: List[int]) -> bool:
+def increasingTriplet(nums: list[int]) -> bool:
     n = len(nums)
     if n < 3:
         return False
@@ -102,7 +102,7 @@ def increasingTriplet(nums: List[int]) -> bool:
 
 
 # Problem 443 LeetCode
-def compress(chars: List[str]) -> int:
+def compress(chars: list[str]) -> int:
     res = ""
     count = 0
     index = 0
@@ -137,5 +137,5 @@ def compress(chars: List[str]) -> int:
 
 
 if __name__ == '__main__':
-    nums = [-1, 1, 0, -3, 3]
-    print(productExceptSelf(nums=nums))
+    chars = ["a", "b", "c"]
+    print(compress(chars=chars))
