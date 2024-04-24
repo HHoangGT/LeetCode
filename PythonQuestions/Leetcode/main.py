@@ -1,7 +1,9 @@
 import numpy as np
-
+import sys
 
 # Problem 650 LeetCode
+
+
 def can_place_flowers(flowerbed: list[int], n: int) -> bool:
     if n == 0:
         return True
@@ -81,42 +83,6 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         return [0 for num in nums]
 
 
-# Problem 443 LeetCode
-def compress(chars: list[str]) -> int:
-    res = ""
-    count = 0
-    index = 0
-    if len(chars) == 1:
-        return 1
-    while index < len(chars):
-        if index == 0:
-            count += 1
-            index += 1
-            continue
-        else:
-            if chars[index] == chars[index - 1]:
-                count += 1
-                index += 1
-                if (index == len(chars)):
-                    res += chars[index - 1]
-                    if count != 1:
-                        res += str(count)
-                continue
-            else:
-                res += chars[index - 1]
-                if count != 1:
-                    res += str(count)
-                count = 1
-                index += 1
-                if (index == len(chars)):
-                    res += chars[index - 1]
-                    if count != 1:
-                        res += str(count)
-    chars[:] = list(res)
-    return len(chars)
-
-
 if __name__ == '__main__':
-    chars = ["a", "b", "c"]
-    print(compress(chars))
-    print(chars)
+    nums = [-1, 1, 0, -3, 3]
+    print(productExceptSelf(nums=nums))
