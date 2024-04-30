@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+from queue import Queue
 
 
 class Solution:
@@ -134,6 +135,25 @@ class Solution:
         zero_count = nums.count(0)
         lst2.extend([0] * zero_count)
         nums[:] = lst2
+
+    # Problem 329 LeetCode
+    def isSubsequence(self, s: str, t: str) -> bool:
+        if len(t) == 0 and len(s) == 0:
+            return True
+        elif len(s) == 0 and len(t) != 0:
+            return True
+        elif len(t) == 0 and len(s) != 0:
+            return False
+        else:
+            queue = Queue()
+            for char in s:
+                queue.put(char)
+            for char in t:
+                if char == queue.queue[0]:
+                    queue.get()
+                if queue.empty():
+                    return True
+            return queue.empty()
 
 
 if __name__ == '__main__':
