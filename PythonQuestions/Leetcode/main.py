@@ -155,9 +155,24 @@ class Solution:
                     return True
             return queue.empty()
 
+    # Problem 11 LeetCode
+    def maxArea(self, height: list[int]) -> int:
+        left_ptr = 0
+        right_ptr = len(height) - 1
+        max_area = 0
+        while (left_ptr < right_ptr):
+            area = min(height[left_ptr], height[right_ptr]) * \
+                (right_ptr - left_ptr)
+            max_area = max(max_area, area)
+            if (height[left_ptr] < height[right_ptr]):
+                left_ptr += 1
+            else:
+                right_ptr -= 1
+        return max_area
+
 
 if __name__ == '__main__':
     solution = Solution()
-    nums = [0, 1, 0, 3, 12]
-    solution.moveZeros(nums)
-    print(nums)
+    nums = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+    print(solution.maxArea(nums))
+    # print(nums)
