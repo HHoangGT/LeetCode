@@ -170,9 +170,27 @@ class Solution:
                 right_ptr -= 1
         return max_area
 
+    # Problem 1679 LeetCode
+    def maxOperation(self, nums: list[int], k: int) -> int:
+        sorted_nums = sorted(nums)
+        left_ptr = 0
+        right_ptr = len(sorted_nums) - 1
+        operation_counter = 0
+        while left_ptr < right_ptr:
+            adding = sorted_nums[left_ptr] + sorted_nums[right_ptr]
+            if adding == k:
+                operation_counter += 1
+                left_ptr += 1
+                right_ptr -= 1
+            elif adding < k:
+                left_ptr += 1
+            else:
+                right_ptr -= 1
+        return operation_counter
+
 
 if __name__ == '__main__':
     solution = Solution()
-    nums = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-    print(solution.maxArea(nums))
+    nums = [1, 2, 3, 4]
+    print(solution.maxOperation(nums, 5))
     # print(nums)
