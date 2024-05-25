@@ -1,20 +1,14 @@
 #include "libs/template.h"
-#include "LabExercises/Lab1/InLab/Function_InLab.h"
+#include "LabExercises/Lab2/InLab/Pointer_Basic_Inlab.h"
 
 using namespace std;
 
-int main() {
-    int n, shift;
-    cin >> n >> shift;
-    char *text = new char[n + 1];
-    for (int i = 0; i < n; i++) cin >> text[i];
-    text[n] = 0;
-
-    encrypt(text, shift);
-    cout << "Encrypted text: " << text << '\n';
-    decrypt(text, shift);
-    cout << "Decrypted text: " << text;
-
-    delete[] text;
+int main()
+{
+    int arr[100] = {5};
+    int n = 0;
+    int k = -1;
+    add(arr, n, k);
+    cout << arr[n];
     return 0;
 }
